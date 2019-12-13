@@ -130,7 +130,7 @@ If you have not yet installed the extensions specified by the instructors during
 
 > If you have not completed the VS Code Extensions part of Installfest, please install the three extensions below for now and do the rest later. If you have already installed these all, check out my additional recommendations below.
 
-> **Most important for today**:
+**Most important for today**:
 
 -   [x] **Live Server** (most of you did this yesterday!): allows you to continually refresh your index.html file in your browser after saving changes in your code editor 🌊
 -   [x] **ES Lint**: "lints" or analyzes your code for errors ✅
@@ -356,7 +356,7 @@ If you would learn any two - learn these!
 
 -   We covered a lot of different shortcuts and tools today. Come back to this markdown as a reference and look up the things we did and keep practicing!
 -   These shortcuts will help you spend less time and energy managing your screen and workflow, and more time and energy thinking about writing GOOD CODE.
--   As you learn more about what it means to be a developer, find the tools and extensions that work for YOU and make you HAPPY when you code. 👩‍💻👨‍💻
+-   As you learn more about what it means to be a developer, find the tools and extensions that work for YOU and make you HAPPY when you code. 🥰
 -   This course is intense, but it should never get in the way of self-care. A gentle reminder to make sure you are eating well, getting out of the house, stretching, sleeping enough, and finding ways to unwind that aren't in front of a screen. You will find that you work better and faster if you are taking the time to take care of yourself.
 -   There is an expression: "If you don't have time to do it right the first time, when will you have time to do it right a second time?" So take those extra moments to do it right and build good habits NOW - your future self will thank you. 🙏
 
