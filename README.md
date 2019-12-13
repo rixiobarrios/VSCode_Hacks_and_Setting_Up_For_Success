@@ -101,7 +101,7 @@ Monitors
 -   Open VS Code by clicking on the icon in your dock, OR by opening your search `cmd` + `space` and typing `vscode`).
 -   Most of you already did this, but if you can't launch VS Code from your terminal yet: open the Command Palette (⇧⌘P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command.
 
-![install shell commands](shellcommand.png)
+![install shell commands](images/shellcommand.png)
 
 -   You might need to quit terminal _and_ VS Code (`cmd` + `q`) in order for this to take effect.
     -   Make sure you are `quitting` terminal and VS Code, not just closing the program to install shell commands.
@@ -141,11 +141,11 @@ If you have not yet installed the extensions specified by Jennifer during Instal
 -   [ ] **Code Spell Checker**: Automatically spell-checks your code (so that you don't ever have to spend hours debugging only to realize you misspelled your variable on line 56 🤦‍♀️).
 -   [ ] **Peacock**: Allows you to select different background colors for multiple code editors (useful if you're working on two different projects, like a frontend and a backend, to quickly tell the two apart):
 
-![Peacock Preview](hero.png)
+![Peacock Preview](images/hero.png)
 
 -   [ ] **Markdown Preview Enhanced**: Allows you to preview your .md files in VS Code (this will come in handy when you write out a detailed README for your projects so that potential employers and other developers understand what you did; on a related note, here is a great resource for [styling markdown files](https://guides.github.com/features/mastering-markdown/)):
 
-![MD_Preview](MD_Preview.png)
+![MD_Preview](images/MD_Preview.png)
 
 ## VS Code Settings
 
@@ -164,11 +164,11 @@ Code formatting done well makes your code easy to read and understand, and also 
 1. Scroll down to `Extensions` in your `Settings`. Select **Prettier** from the list on the left.
 1. Scroll down to `Prettier: Semi` and `Prettier: Single Quote`. Check the box for both to enable semicolons and single quotes.
 
-![prettier settings](prettier_settings.png)
+![prettier settings](images/prettier_settings.png)
 
 1. Now to make these formatting changes automatically everytime you hit `command` + `s` to save, we need to open your `settings.json` file. Press `command` + `shift` + `p` to open your Command Palette. Type `Open Settings`, then select `Preferences: Open Settings (JSON)`.
 
-![opening settings file](open_settings_json.png)
+![opening settings file](images/open_settings_json.png)
 
 1. Once you have opened your `settings.json` file, copy and paste the following into the top of your settings.
 
@@ -181,7 +181,7 @@ Code formatting done well makes your code easy to read and understand, and also 
 
 1. Now your `settings.json` should look like this:
 
-![settings.json file](correct_settingsjson.png)
+![settings.json file](images/correct_settingsjson.png)
 
 Now your text editor will AUTOMATICALLY format on save and paste! That being said, do your best to format code correctly, as you will often be coding without your formatter (such as in REPLs like CodePen, or whiteboarding in coding interviews).
 
@@ -288,9 +288,9 @@ If you would learn any two - learn these!
 | Control-C | Stop the running process (works for many, but not all) |
 | Command-K |                    Clear the window                    |
 
-> Whenever you quit terminal, a REALLY good habit is to **always** type `exit` as the command to shut down all terminal processes, then close the terminal window with (`cmd` + `q`). This will prevent extraneous processes from running in the background of your machine and taking up much needed memory!
+> Whenever you quit terminal, a REALLY good habit is to ALWAYS type `exit` as the command to shut down all terminal processes, then close the terminal window with (`cmd` + `q`). This will prevent extraneous processes from running in the background of your machine and taking up much needed memory!
 
-:computer: Additional Command Line Shortcuts for Terminal can be found on our [class wiki](../../../../../wiki/Terminal-Cheatsheet).
+:computer: Additional Command Line Shortcuts for Terminal can be found [here](https://www.makeuseof.com/tag/mac-terminal-commands-cheat-sheet/).
 
 #### :hourglass: Optional CLI Activity (5 minutes)
 
@@ -341,9 +341,18 @@ If you would learn any two - learn these!
 
 ## Additional Resources
 
+Productivity & Efficiency:
+
 -   [Bullet Journaling](https://bulletjournal.com/pages/learn): a really cool productivity habit that I highly recommend
 -   [Coding Journals](https://www.makeuseof.com/tag/become-better-coder-keeping-programming-journal/): an awesome way to keep track of your growth as a coder and synthesize the different concepts you learn
 -   [Trello Boards](https://trello.com): a great free service for people who love interactive, visual to-do lists, and widely-used in development for project planning
+
+Fun:
+
 -   [Rocket](https://matthewpalmer.net/rocket/): integrates emojis into your other applications 🚀 (after downloading, be sure to click the Rocket icon in your upper right menu bar, then in preferences allow it to open on login)
+
+VS Code:
+
 -   [More information on using Prettier](https://www.codereadability.com/automated-code-formatting-with-prettier/)
 -   [A developer's guide to VS Code settings you should customize](https://dev.to/thegeoffstevens/vs-code-settings-you-should-customize-5e75): we already did some of these today
+-   [VS Code Can Do That?!](https://vscodecandothat.com/)
