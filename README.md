@@ -164,19 +164,20 @@ If you have not yet installed the extensions specified by the instructors during
 
 Code formatting done well makes your code easy to read and understand, and also looks professional -- all things we want! Developing good habits early on to format as you write is important, but luckily VS Code has some great built-in tools to make formatting with your new extensions easier and more automatic.
 
-1. **Open Settings**: In the VS Code navigation menu, go to `Code` -> `Preferences` -> `Settings`. You can also just press `command` + `,` (comma) to open your VS Code Settings.
-1. Scroll down to `Editor: Word Wrap`. Select `on` from the dropdown.
-   <br>
-   ![VS Code - Settings](images/wrap.png)
+1.  **Open Settings**: In the VS Code navigation menu, go to `Code` -> `Preferences` -> `Settings`. You can also just press `command` + `,` (comma) to open your VS Code Settings.
+1.  Scroll down to `Editor: Word Wrap`. Select `on` from the dropdown.
+    <br>
+    ![VS Code - Settings](images/wrap.png)
 
-<br>
-    Your long lines of code will now be wrapped at the width of your viewport:
-<br>
+        <br>
+        Your long lines of code will now be wrapped at the width of your viewport:
 
-![Atom - Soft Wrap](https://i.imgur.com/pU911Al.png)
+    <br>
 
-1. Scroll down to `Extensions` in your `Settings`. Select **Prettier** from the list on the left.
-1. Scroll down to `Prettier: Semi` and `Prettier: Single Quote`. Check the box for both to enable semicolons and single quotes.
+        ![Atom - Soft Wrap](https://i.imgur.com/pU911Al.png)
+
+1.  Scroll down to `Extensions` in your `Settings`. Select **Prettier** from the list on the left.
+1.  Scroll down to `Prettier: Semi` and `Prettier: Single Quote`. Check the box for both to enable semicolons and single quotes.
 
 ![prettier settings](images/prettier_settings.png)
 
