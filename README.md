@@ -14,15 +14,24 @@
 -   Students will be able to utilize shortcuts on the keyboard, Spectacle, terminal, and VS Code
 -   Students will start building good habits and gain an understanding of how to be a more efficient coder
 
+## Instructions
+
+1. Open terminal.
+2. Navigate into `sei/sandbox`.
+3. Copy the https or SSH link to this repo by pressing the green Clone or Download button.
+4. Navigate into the directory AND open its contents at the same time by copying and pasting the following into terminal: `cd VSCode_Hacks_and_Setting_Up_For_Success && code .`
+
 ## Agenda
 
 -   Preface: The importance of starting good habits today
 -   Part 1: Screen Real Estate and Window Management with Spectacle
 -   Part 2: VS Code Extensions, Settings and Shortcuts
--   Part 3: Mac Shortcuts
--   Part 4: Terminal Shortcuts
--   Part 5: Typing
+-   Part 3: Mac Shortcuts\*
+-   Part 4: Terminal Shortcuts\*
+-   Part 5: Typing\*
 -   Further Reading & Resources
+
+> For this morning, we will focus on getting through Parts 1 and 2 in depth. For students who would like more practice with Mac commands, Terminal shortcuts, and Typing skills for coding, Parts 3, 4, and 5 are included for future reference.
 
 ## A Quick Note
 
@@ -88,7 +97,7 @@ Once it's installed, you should have little glasses ![spectacle](https://i.imgur
 -   Try to organize your windows using Spectacle (and then adjusting as needed) like so:
 
 Monitors
-![Monitors Labeled.png](monitors_labeled.png)
+![Monitors Labeled.png](images/monitors_labeled.png)
 
 <hr>
 
@@ -99,7 +108,7 @@ Monitors
 > Most of you have this set up already.
 
 -   Open VS Code by clicking on the icon in your dock, OR by opening your search `cmd` + `space` and typing `vscode`).
--   Most of you already did this, but if you can't launch VS Code from your terminal yet: open the Command Palette (⇧⌘P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command.
+-   Most of you already did this, but if you can't launch VS Code from your terminal yet: open the Command Palette (⇧⌘P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH.
 
 ![install shell commands](images/shellcommand.png)
 
@@ -109,23 +118,23 @@ Monitors
 ### Then how do I know it worked?
 
 1.  Open terminal again (if you had to close it).
-1.  Navigate back into the `deleteme` directory.
+1.  Navigate back into one of your homework assignment directories.
 1.  Type `code .` to open the whole directory, or `code test.html` to open just the file (try using the tab autocomplete!) and hit **enter**.
 1.  Wait a moment, and VS Code will open the directory or file you requested!
 
 ## Extensions
 
-If you have not yet installed the extensions specified by Jennifer during Installfest, let's do so now:
+If you have not yet installed the extensions specified by the instructors during Installfest, let's do so now:
 
 ### Installed During Installfest (skip this part if you added these already):
 
 **Most important for today**:
 
--   [x] **Live Server** (you guys did this yesterday!): allows you to continually refresh your index.html file in your browser after making changes in your code editor 🌊
--   [x] **ES Lint**: "lints" or analyzes your code for potential errors ✅
--   [x] **Prettier Code Formatter**: an opinionated code formatter that can automatically adjust indentation and semicolons for you 🌸
+-   [x] **Live Server** (most of you did this yesterday!): allows you to continually refresh your index.html file in your browser after saving changes in your code editor 🌊
+-   [x] **ES Lint**: "lints" or analyzes your code for errors ✅
+-   [x] **Prettier Code Formatter**: an opinionated code formatter that can automatically adjust indentations and semicolons 🌸
 
-**These can be done this weekend**:
+**These can be saved for later**:
 
 -   [x] **Auto Rename Tag**: automatically renames tags
 -   [x] **Auto Close Tag**: automatically closes tags
@@ -137,9 +146,9 @@ If you have not yet installed the extensions specified by Jennifer during Instal
 
 ### My Additional Recommendations (optional):
 
--   [ ] **Live Share**: Allows you to simultaneously work in VS code files with other developers in real-time (like Google docs), which will be very useful for pair-programming in future assignments
+-   [ ] **Live Share**: Allows you to simultaneously work in VS code files with other developers in real-time (like Google docs), which will be very useful for pair-programming in future assignments 👩‍💻👩‍💻
 -   [ ] **Code Spell Checker**: Automatically spell-checks your code (so that you don't ever have to spend hours debugging only to realize you misspelled your variable on line 56 🤦‍♀️).
--   [ ] **Peacock**: Allows you to select different background colors for multiple code editors (useful if you're working on two different projects, like a frontend and a backend, to quickly tell the two apart):
+-   [ ] **Peacock**: Allows you to select different background colors for multiple code editors 🎨 (useful if you're working on two different projects, like a frontend and a backend, to quickly tell the two apart):
 
 ![Peacock Preview](images/hero.png)
 
@@ -156,7 +165,7 @@ Code formatting done well makes your code easy to read and understand, and also 
 1. **Open Settings**: In the VS Code navigation menu, go to `Code` -> `Preferences` -> `Settings`. You can also just press `command` + `,` (comma) to open your VS Code Settings.
 1. Scroll down to `Editor: Word Wrap`. Select `on` from the dropdown.
    <br>
-   ![VS Code - Settings](wrap.png)
+   ![VS Code - Settings](images/wrap.png)
    Your long lines of code will now be wrapped at the width of your viewport:
 
     ![Atom - Soft Wrap](https://i.imgur.com/pU911Al.png)
@@ -166,7 +175,7 @@ Code formatting done well makes your code easy to read and understand, and also 
 
 ![prettier settings](images/prettier_settings.png)
 
-1. Now to make these formatting changes automatically everytime you hit `command` + `s` to save, we need to open your `settings.json` file. Press `command` + `shift` + `p` to open your Command Palette. Type `Open Settings`, then select `Preferences: Open Settings (JSON)`.
+1. Now to make these formatting changes automatically everytime you save, press `command` + `shift` + `p` to open your Command Palette. Type `Open Settings`, then select `Preferences: Open Settings (JSON)`.
 
 ![opening settings file](images/open_settings_json.png)
 
@@ -174,10 +183,10 @@ Code formatting done well makes your code easy to read and understand, and also 
 
 ```javascript
 "editor.formatOnSave": true,
- "editor.formatOnPaste": true,
+"editor.formatOnPaste": true,
 ```
 
-> Optional: you can also add "files.autoSave": "afterDelay" if you would like VS Code to automatically save files for you. This is not always ideal, but it may be useful for the purposes of this course.
+> Optional: you can also add `"files.autoSave": "afterDelay"` if you would like VS Code to automatically save files for you. This is not always ideal, but it may be useful for the purposes of this course.
 
 1. Now your `settings.json` should look like this:
 
@@ -187,15 +196,9 @@ Now your text editor will AUTOMATICALLY format on save and paste! That being sai
 
 ## VS Code Shortcuts & Hacks
 
-### Selecting Code
-
--   To select the same word or values in multiple places in your document, use `command` + `d`
--   To move a line of code up or down, move your cursor to the line, press `option` and use the `up` or `down` arrows.
--   To quickly move through lines of code horizontally, use `option` + `left` or `right` arrows to move by word, and `command` + `left` or `right` arrows to move to the beginning or end of the line.
-
 ### HTML Boilerplate
 
-Every HTML document needs the same basic tags. There's an easy way to do this with the Emmet tool built into VS Code:
+Every HTML document needs the same basic skeleton. There's an easy way to do this with the Emmet tool built into VS Code:
 
 -   Go into the `index.html` file in this directory. Type `html:5` and hit `tab`. The boilerplate should autocomplete (this saves us a lot of time).
 -   Even shorter: type `!` and then hit tab to create HTML boilerplate. 😱
@@ -203,9 +206,18 @@ Every HTML document needs the same basic tags. There's an easy way to do this wi
 
 ![html](https://i.imgur.com/OTprVyE.png)
 
+### Selecting Code
+
+-   To select the same word or values in multiple places in your document, use `command` + `d`
+-   To move a line of code up or down, move your cursor to the line, press `option` and use the `up` or `down` arrows.
+-   To quickly move through lines of code horizontally, use `option` + `left` or `right` arrows to move by word, and `command` + `left` or `right` arrows to move to the beginning or end of the line.
+    > Try these out yourself in this directory's `index.html` file.
+
 ### Commenting Code
 
 Whether you're in an HTML, CSS, or JavaScript file, if you want to comment out your code (have the program ignore some lines of code), you can highlight your code and use one command: `command` + `/`.
+
+> Try these out yourself in this directory's `index.html` file.
 
 :eyes: Commented out code looks different depending on the file type, so you'll use this shortcut frequently!
 
@@ -244,13 +256,15 @@ Anytime you need to access the terminal from your project directory, go to the V
 |    Command-X     |                        **Cut** (remove) the selected item and copy it to the Clipboard                        |
 |    Command-Y     |                       **Redo** - redo something you undid (when you've used Command-Z)                        |
 |    Command-Z     |                                     **Undo** the previous command/typing                                      |
-| Command-Shift-4  |                                               Take a screenshot                                               |
+|   Command-Tab    |                                       Toggle between open applications                                        |
+| Command-Shift-3  |                                     Take a screenshot of the whole screen                                     |
+|  Command-Shift-  |                                    Take a screenshot of a selectable area                                     |
 | Command-Spacebar |                                                Open Spotlight                                                 |
 | Option-Command-J |                                    In Chrome, opens **Dev Tools/Console**                                     |
 
 #### :hourglass: Optional Self-Guided Activity (5 minutes)
 
--   Open this repository in VS Code.
+-   Open this repository in VS Code if you have not yet done so.
 -   Make a file called `script2.js` from the terminal built into VS Code.
 -   Copy ALL (command A) the text from this file (you can copy from the browser)
 -   Paste (command V) the text into your new file
