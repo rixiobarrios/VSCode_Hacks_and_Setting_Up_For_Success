@@ -350,6 +350,7 @@ Productivity & Efficiency:
 Fun:
 
 -   [Rocket](https://matthewpalmer.net/rocket/): integrates emojis into your other applications 🚀 (after downloading, be sure to click the Rocket icon in your upper right menu bar, then in preferences allow it to open on login)
+-   [Top Ten Programming Memes](https://dev.to/teamxenox/top-10-programming-memes-pemes-4php): self explanatory 😄
 
 VS Code:
 
