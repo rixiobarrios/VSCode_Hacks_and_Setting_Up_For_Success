@@ -1,16 +1,16 @@
-Title: VS Code & Setting You Up for Success <br>
-Type: Morning Exercise<br>
-Duration: "0:45"<br>
-Creator: Kristyn Bryan<br>
-Adapted by: Cathleen Wright, Karolin Rafalski, Grant Knief, Esin Saribudak<br>
-Competencies: Spectacle, VS Code extensions and shortcuts, Command Line & Keyboard shortcuts <br>
-Prerequisites: VS Code installed, CLI<br>
+**Title:** VS Code Hacks & Setting Up for Success <br>
+**Type:** Morning Exercise<br>
+**Duration:** 0:45<br>
+**Creator:** Kristyn Bryan<br>
+**Adapted by:** Cathleen Wright, Karolin Rafalski, Grant Knief, Kenny Cruz, Esin Saribudak<br>
+**Competencies:** VS Code extensions and shortcuts, Spectacle, Command Line & Keyboard shortcuts <br>
+**Prerequisites:** VS Code, CLI<br>
 
 <hr>
 
 ## Objectives
 
--   Students will download and use VS Code extensions that help make them better coders
+-   Students will download and use VS Code extensions that enrich and improve the coding experience
 -   Students will be able to utilize shortcuts on the keyboard, Spectacle, terminal, and VS Code
 -   Students will start building good habits and gain an understanding of how to be a more efficient coder
 
@@ -30,13 +30,15 @@ We try to keep all of our repositories updated with all the links working and im
 
 ## Introduction
 
-As an aspiring web developer, you have a lot to learn. One really critical thing to focus on is starting good habits today. If you teach yourself the best ways to do things now, you won't have to go back and correct yourself later. You'll also learn to code faster and have a better workflow, where you won't lose minutes switching between applications and windows. Utilizing keyboard shortcuts will also help you type faster and let you focus on the task at hand.
+As an aspiring web developer, you have a lot to learn. One really critical thing to focus on is starting good habits as early as possible. If you teach yourself the most efficient ways to do things now, you won't have to go back and correct yourself later. You'll also learn to code faster and have a better workflow, where you won't lose minutes switching between applications and windows, and resizing windows to maximize efficiency. Utilizing keyboard shortcuts will also help you type faster and let you focus on the task at hand.
 
 A lot of these steps will feel awkward at first, but the more you use them, the sooner they'll become second nature and be engraved into your muscle memory. Part of succeeding is just taking a deep breath and taking a moment to practice the better way, then it'll get easier and easier.
 
-There are hundreds, if not thousands, of little things you can do to make you a more effective coder. Here we're going to focus on a small group of things that will have the biggest impact for being ready for this course.
+There are hundreds, if not thousands, of little things you can do to make you a more effective coder. Here we're going to focus on a small group of things that will have the biggest impact on maximizing your efficiency as a developer.
 
-:closed_lock_with_key: We will be downloading applications to your computer. You will need the password for your Mac in order to proceed.
+:closed_lock_with_key: We will be downloading applications to your computer. Make sure you have the password for your Mac in order to proceed.
+
+**Suggestion: Bookmark or download this repository for future reference** 🤓
 
 <hr>
 
@@ -64,27 +66,35 @@ There are hundreds, if not thousands, of little things you can do to make you a 
 
 If you have not yet installed the extensions specified by Jennifer during Installfest, let's do so now:
 
-Recommended During Installfest (skip this part if you added these already):
+### Installed During Installfest (skip this part if you added these already):
 
 -   [x] **Live Server** (you guys did this yesterday!): allows you to continually refresh your index.html file in your browser after making changes in your code editor 🌊
 -   [x] **ES Lint**: "lints" or analyzes your code for potential errors ✅
 -   [x] **Prettier Code Formatter**: an opinionated code formatter that can automatically adjust indentation and semicolons for you 🌸
--   [x] **Auto Rename Tag**
--   [x] **Auto Close Tag**
--   [x] **VS Code Icons**
--   [x] **Git Link**
--   [x] **Git Lens**
+-   [x] **Auto Rename Tag**: automatically renames tags
+-   [x] **Auto Close Tag**: automatically closes tags
+-   [x] **VS Code Icons**: custom file icons
+-   [x] **Git Link**: allows you to quickly find GitHub links to your files
+-   [x] **Git Lens**: shows status and owner of changes to Git-tracked files
 -   [x] **Bracket Pair Colorizer**: uses different colors for your brackets and parentheses so you can keep track of them
--   [x] **Path Intellisense**
+-   [x] **Path Intellisense**: auto-completes file names AKA paths.
 
-Esin's Additional Recommendations:
+### Esin's Additional Recommendations (totally optional):
 
--   [ ] **Live Share**: Allows you to simultaneously work in VS code files with other developers in real-time (like Google docs), which will be very useful for pair-programming in the future
--   [ ] **Code Spell Checker**: Automatically spell-checks your code so that you don't ever spend hours debugging only to realize you misspelled your variable on line 56 🤦‍♀️
--   [ ] **Markdown Preview Enhanced**: Allows you to preview your README.md files in VS Code (this will come in handy when you write out a detailed README for your projects so that potential employers and other developers understand what you did):
+-   [ ] **Live Share**: Allows you to simultaneously work in VS code files with other developers in real-time (like Google docs), which will be very useful for pair-programming in future assignments
+-   [ ] **Code Spell Checker**: Automatically spell-checks your code (so that you don't ever have to spend hours debugging only to realize you misspelled your variable on line 56 🤦‍♀️)
+-   [ ] **Peacock**: Allows you to select different background colors for multiple code editors (useful if you're working on two different projects, like a frontend and a backend, to quickly tell the two apart):
+        ![Peacock Preview](hero.png)
+-   [ ] **Markdown Preview Enhanced**: Allows you to preview your README.md files in VS Code (this will come in handy when you write out a detailed README for your projects so that potential employers and other developers understand what you did, and here is a great resource for [styling markdown files](https://guides.github.com/features/mastering-markdown/)):
         ![MD_Preview](MD_Preview.png)
 
 ## VS Code Settings
+
+### Auto-Format on Save
+
+-   Semicolons
+-   Indentation
+-   Auto-format on save
 
 ### Wrapping Text
 
@@ -153,7 +163,9 @@ When indenting your code, please use the tab button. [Do not use your spacebar](
 ## Part 2 - Spectacle
 
 -   Spectacle helps you to move and resize your screens with the a few clicks on your keypad. You no longer have to waste time using your mouse to rearrange the size of the screen.
--   Not only will this help to save you time, but it will help to add to the illusion that you are a bada\$\$ h4ck3r.
+-   Not only will this help to save you time, but it will help to add to the illusion that you are a bada\$\$ h4ck3r
+
+[Keanu whoa](https://media.giphy.com/media/3rVfBUa9f0RErtMZBH/giphy.gif)
 
 ### :computer: Click on this link https://www.spectacleapp.com/ and download and install Spectacle.
 
@@ -235,6 +247,8 @@ Monitors
 
 :computer: [Additional Mac Keyboard Shortcuts](https://support.apple.com/en-us/HT201236)
 
+<hr>
+
 ## Part 4 - Command Line in Terminal
 
 -   You will find yourself having to re-run applications when testing your app or you will find yourself needing to retype certain lines over and over again. Be lazy! It will give you more energy for the important stuff.
@@ -259,7 +273,7 @@ If you would learn any two - learn these!
 
 :computer: Additional Command Line Shortcuts for Terminal can be found on our [class wiki](../../../../../wiki/Terminal-Cheatsheet).
 
-#### :hourglass: Activity (5 minutes)
+#### :hourglass: Optional Activity (5 minutes)
 
 -   Open your terminal and let's try out a few terminal shortcut commands while completing the steps below.
 -   You can open terminal via the dock, or by using Spotlight Search (`cmd` + `space`) and typing `terminal`.
@@ -279,11 +293,19 @@ If you would learn any two - learn these!
 
 <hr>
 
-## Part 5: Typing
+## Part 5: Typing & Miscellaneous
 
--   Coding JavaScript often means reaching for keys that you're not used to. Take 2-5 minutes every day to practice if you're rusty!
--   Try `typing.io` that specifically lets you practice typing code (letters and other characters!)
--   You can also google `learn to type free` - to find the right typing practice for you, even going back and practicing touch typing regular characters can help you speed up
+### Getting Better Faster
+
+-   Coding often means reaching for keys that you're not used to. Take 2-5 minutes every day to practice if you're rusty!
+-   Try `typing.io` that specifically lets you practice typing code (letters and other characters!).
+-   You can also google `learn to type free` to find the right typing practice for you, even going back and practicing touch typing regular characters can help you speed up.
+
+### Workflow Suggestions
+
+-   Download the repo for every lecture/lab/exercise, and place it in the appropriate directory within your `/sei` folder to stay organized.
+-   Only fork and clone homework assignments that you will need to turn in via pull request.
+-   I strongly recommend using [Dark Mode](https://support.apple.com/en-us/HT208976) on your Mac, in [Visual Studio Code](https://code.visualstudio.com/docs/getstarted/themes), and wherever else possible to reduce eye strain and blue light exposure.
 
 <hr>
 
@@ -291,11 +313,14 @@ If you would learn any two - learn these!
 
 -   We covered a lot of different short cuts and tools today. Come back to this markdown as a reference and look up the things we did and keep practicing!
 -   These shortcuts will help you spend less time and energy managing your screen and workflow, and more time and energy thinking about writing GOOD CODE.
--   This course is intense, but it should never get in the way of self-care, make sure you are eating well, getting out of the house, stretching, sleeping enough, and finding ways to unwind that isn't in front of a screen.
--   There is an expression: "If you don't have time to do it right the first time, when will you have time to do it right a second time?" So take those extra moments to do it right - your future self will thank you 🙏
+-   As you learn more about what it means to be a developer, find the tools and extensions that work for YOU and make you HAPPY when you code. 👩‍💻👨‍💻
+-   This course is intense, but it should never get in the way of self-care. A gentle reminder to make sure you are eating well, getting out of the house, stretching, sleeping enough, and finding ways to unwind that aren't in front of a screen.
+-   There is an expression: "If you don't have time to do it right the first time, when will you have time to do it right a second time?" So take those extra moments to do it right - your future self will thank you. 🙏
 
-<!-- ## Additional Resources
+<hr>
 
-- [f.lux](https://justgetflux.com/)<br>
-- [Atom Packages](https://atom.io/packages)<br>
-- [Atom Themes](https://atom.io/themes)<br> -->
+## Additional Resources
+
+-   [Bullet Journaling](https://bulletjournal.com/pages/learn): a really cool productivity habit that I highly recommend
+-   [Coding Journals](https://www.makeuseof.com/tag/become-better-coder-keeping-programming-journal/): an awesome way to keep track of your growth as a coder and synthesize the different concepts you learn
+-   [Trello Boards](https://trello.com): a great free service for people who love interactive, visual to-do lists, and widely-used in development for project planning
