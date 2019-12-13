@@ -166,15 +166,16 @@ Code formatting done well makes your code easy to read and understand, and also 
 
 1.  **Open Settings**: In the VS Code navigation menu, go to `Code` -> `Preferences` -> `Settings`. You can also just press `command` + `,` (comma) to open your VS Code Settings.
 1.  Scroll down to `Editor: Word Wrap`. Select `on` from the dropdown.
-    <br>
+
     ![VS Code - Settings](images/wrap.png)
 
-        <br>
-        Your long lines of code will now be wrapped at the width of your viewport:
+    <br>
+
+    Your long lines of code will now be wrapped at the width of your viewport:
 
     <br>
 
-        ![Atom - Soft Wrap](https://i.imgur.com/pU911Al.png)
+    ![Atom - Soft Wrap](https://i.imgur.com/pU911Al.png)
 
 1.  Scroll down to `Extensions` in your `Settings`. Select **Prettier** from the list on the left.
 1.  Scroll down to `Prettier: Semi` and `Prettier: Single Quote`. Check the box for both to enable semicolons and single quotes.
