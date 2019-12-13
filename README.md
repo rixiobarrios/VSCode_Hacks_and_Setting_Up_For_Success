@@ -26,9 +26,9 @@
 
 ## A Quick Note
 
-We try to keep all of our repositories updated with all the links working and images showing up, but sometimes things get moved around (especially when we just checked them a couple days ago!). If any links or images are broken, please let us know and we'll update them!
+We try to keep all of our SEIR-129 repositories updated with all the links working and images showing up, but sometimes URLs or repo files get moved around. In general, if any links or images are ever broken, please let us know and we'll update them!
 
-## Introduction
+## Preface: Start Good Habits Today
 
 As an aspiring web developer, you have a lot to learn. One really critical thing to focus on is starting good habits as early as possible. If you teach yourself the most efficient ways to do things now, you won't have to go back and correct yourself later. You'll also learn to code faster and have a better workflow, where you won't lose minutes switching between applications and windows, and resizing windows to maximize efficiency. Utilizing keyboard shortcuts will also help you type faster and let you focus on the task at hand.
 
@@ -42,9 +42,11 @@ There are hundreds, if not thousands, of little things you can do to make you a 
 
 <hr>
 
-## Part 1 - VS Code Extensions & Shortcuts
+## Part 1 - VS Code Extensions, Shortcuts & Settings
 
-### Launching VS Code from Terminal (most of you have already done this)
+### Launching VS Code from Terminal
+
+> Most of you have this set up already.
 
 -   Open VS Code by clicking on the icon in your dock, OR by opening your search `cmd` + `space` and typing `vscode`).
 -   Most of you already did this, but if you can't launch VS Code from your terminal yet: open the Command Palette (⇧⌘P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command.
@@ -82,32 +84,48 @@ If you have not yet installed the extensions specified by Jennifer during Instal
 ### Esin's Additional Recommendations (totally optional):
 
 -   [ ] **Live Share**: Allows you to simultaneously work in VS code files with other developers in real-time (like Google docs), which will be very useful for pair-programming in future assignments
--   [ ] **Code Spell Checker**: Automatically spell-checks your code (so that you don't ever have to spend hours debugging only to realize you misspelled your variable on line 56 🤦‍♀️)
+-   [ ] **Code Spell Checker**: Automatically spell-checks your code (so that you don't ever have to spend hours debugging only to realize you misspelled your variable on line 56 🤦‍♀️).
 -   [ ] **Peacock**: Allows you to select different background colors for multiple code editors (useful if you're working on two different projects, like a frontend and a backend, to quickly tell the two apart):
-        ![Peacock Preview](hero.png)
--   [ ] **Markdown Preview Enhanced**: Allows you to preview your README.md files in VS Code (this will come in handy when you write out a detailed README for your projects so that potential employers and other developers understand what you did, and here is a great resource for [styling markdown files](https://guides.github.com/features/mastering-markdown/)):
-        ![MD_Preview](MD_Preview.png)
 
-## VS Code Settings
+![Peacock Preview](hero.png)
 
-### Auto-Format on Save
+-   [ ] **Markdown Preview Enhanced**: Allows you to preview your .md files in VS Code (this will come in handy when you write out a detailed README for your projects so that potential employers and other developers understand what you did; on a related note, here is a great resource for [styling markdown files](https://guides.github.com/features/mastering-markdown/)):
 
--   Semicolons
--   Indentation
--   Auto-format on save
+![MD_Preview](MD_Preview.png)
 
-### Wrapping Text
+## VS Code Settings & Hacks
 
-You have a limited amount of visible space in your files, so wrapping your text will help you to see all the code in a line without needing to scroll horizontally.
+### Formatting
 
-1. Click on `Code` and hover over `Preferences`, then click on `Settings`<br>
-
-2) Scroll Down to `Editor: Word Wrap`. Select `on` from the dropdown. <br>
+1. **Open Settings**: In the VS Code navigation menu, go to `Code` -> `Preferences` -> `Settings`. You can also just press `command` + `,` (comma) to open your VS Code Settings.
+1. Scroll down to `Editor: Word Wrap`. Select `on` from the dropdown.
+   <br>
    ![VS Code - Settings](wrap.png)
+   Your long lines of code will now be wrapped at the width of your viewport:
 
-3. Your long lines of code will now be wrapped at the width of your viewport. <br>
+    ![Atom - Soft Wrap](https://i.imgur.com/pU911Al.png)
 
-![Atom - Soft Wrap](https://i.imgur.com/pU911Al.png)
+1. Scroll down to `Extensions` in your `Settings`. Select **Prettier** from the list on the left.
+1. Scroll down to `Prettier: Semi` and `Prettier: Single Quote`. Check the box for both to enable semicolons and single quotes.
+
+![prettier settings](prettier_settings.png)
+
+1. Now to make these formatting changes automatically everytime you hit `command` + `s` to save, we need to open your `settings.json` file. Press `command` + `shift` + `p` to open your Command Palette. Type `Open Settings`, then select `Preferences: Open Settings (JSON)`.
+
+![opening settings file](open_settings_json.png)
+
+1. Once you have opened your `settings.json` file, copy and paste the following into the top of your settings.
+
+```javascript
+"editor.formatOnSave": true,
+ "editor.formatOnPaste": true,
+```
+
+1. Now your `settings.json` should look like this:
+
+![settings.json file](correct_settingsjson.png)
+
+Now your text editor will AUTOMATICALLY format on save and paste!
 
 ## VS Code Shortcuts & Tricks
 
@@ -115,11 +133,14 @@ You have a limited amount of visible space in your files, so wrapping your text 
 
 -   To select the same word or values in multiple places in your document, use `command` + `d`
 -   To move a line of code up or down, move your cursor to the line, press `option` and use the `up` or `down` arrows.
+-   To quickly move through lines of code horizontally, use `option` + `left` or `right` arrows to move by word, and `command` + `left` or `right` arrows to move to the beginning or end of the line.
 
 ### HTML Boilerplate
 
--   Every HTML document needs the same basic tags. There's an easy way to do this in VS Code.
--   Type `html:5` and hit `tab`. The boilerplate should autocomplete (this saves us a lot of time).
+Every HTML document needs the same basic tags. There's an easy way to do this in VS Code:
+
+-   Go into the `index.html` file in this directory. Type `html:5` and hit `tab`. The boilerplate should autocomplete (this saves us a lot of time).
+-   Even shorter: type `!` and then hit tab to create HTML boilerplate. 😱
 -   File types matter. Notice how we're in a `.html` file!
 
 ![html](https://i.imgur.com/OTprVyE.png)
@@ -132,13 +153,9 @@ Whether you're in an HTML, CSS, or JavaScript file, if you want to comment out y
 
 ![comment code](https://i.imgur.com/GoxPKPj.png)
 
-#### :hourglass: Activity (2 minutes)
-
--   Write some notes to yourself inside your HTML boilerplate `<body>` tag, and then comment them out using the shortcut!
-
 ### Split Screen
 
--   If you have more than one file that you'd like to look at in VS Code, you can go up to `View` --> `Editor Layout`and then choose how you would like your panes to be displayed. <br>
+-   If you have more than one file that you'd like to look at in VS Code, you can go up to `View` --> `Editor Layout`and then choose how you would like your panes to be displayed. Two or even three panes can help your workflow! <br>
 
 Or you can click and drag the tab to where you'd like your new pane to be!
 
@@ -314,8 +331,8 @@ If you would learn any two - learn these!
 -   We covered a lot of different short cuts and tools today. Come back to this markdown as a reference and look up the things we did and keep practicing!
 -   These shortcuts will help you spend less time and energy managing your screen and workflow, and more time and energy thinking about writing GOOD CODE.
 -   As you learn more about what it means to be a developer, find the tools and extensions that work for YOU and make you HAPPY when you code. 👩‍💻👨‍💻
--   This course is intense, but it should never get in the way of self-care. A gentle reminder to make sure you are eating well, getting out of the house, stretching, sleeping enough, and finding ways to unwind that aren't in front of a screen.
--   There is an expression: "If you don't have time to do it right the first time, when will you have time to do it right a second time?" So take those extra moments to do it right - your future self will thank you. 🙏
+-   This course is intense, but it should never get in the way of self-care. A gentle reminder to make sure you are eating well, getting out of the house, stretching, sleeping enough, and finding ways to unwind that aren't in front of a screen. You will find that you work better and faster if you are taking the time to take care of yourself.
+-   There is an expression: "If you don't have time to do it right the first time, when will you have time to do it right a second time?" So take those extra moments to do it right and build good habits NOW - your future self will thank you. 🙏
 
 <hr>
 
@@ -324,3 +341,6 @@ If you would learn any two - learn these!
 -   [Bullet Journaling](https://bulletjournal.com/pages/learn): a really cool productivity habit that I highly recommend
 -   [Coding Journals](https://www.makeuseof.com/tag/become-better-coder-keeping-programming-journal/): an awesome way to keep track of your growth as a coder and synthesize the different concepts you learn
 -   [Trello Boards](https://trello.com): a great free service for people who love interactive, visual to-do lists, and widely-used in development for project planning
+-   [Rocket](https://matthewpalmer.net/rocket/): integrates emojis into your other applications 🚀
+-   [More information on using Prettier](https://www.codereadability.com/automated-code-formatting-with-prettier/)
+-   [A developer's guide to VS Code settings you should customize](https://dev.to/thegeoffstevens/vs-code-settings-you-should-customize-5e75): we already did some of these today
