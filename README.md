@@ -244,11 +244,13 @@ Or you can click and drag the tab to where you'd like your new pane to be!
 
 ### VS Code Built-in Terminal
 
-Anytime you need to access the terminal from your project directory, go to the VS Code Menu -> `Terminal` -> `New Terminal`. You can also use the keyboard shortcut `control` + `~` (to get the tilde, press `shift` + backtick). This is a convenient place to use for Git, folder and file creation/movement/deletion, and much more!
+Anytime you need to access the terminal from your project directory, go to the VS Code Menu -> `Terminal` -> `New Terminal`. You can also use the keyboard shortcut `control` + `~` (to get the tilde, press `shift` + backtick). This is a convenient place to access terminal for use with Git, folder and file creation/movement/deletion, and much more!
 
 <hr>
 
 ## Part 3 - Mac Keyboard Shortcuts
+
+> For students with previous Mac experience who feel comfortable navigating their machine quickly and effectively, Parts 3, 4 and 5 are optional but still strongly suggested -- you might learn a new shortcut or two that could help you become a more efficient coder!
 
 ### Shortcuts for any occasion!
 
@@ -362,19 +364,19 @@ If you would learn any two - learn these!
 
 ## Additional Resources
 
-Productivity & Efficiency:
+Productivity & Efficiency 📝:
 
 -   [Bullet Journaling](https://bulletjournal.com/pages/learn): a really cool productivity habit that I highly recommend
 -   [Coding Journals](https://www.makeuseof.com/tag/become-better-coder-keeping-programming-journal/): an awesome way to keep track of your growth as a coder and synthesize the different concepts you learn
 -   [Trello Boards](https://trello.com): a great free service for people who love interactive, visual to-do lists, and widely-used in development for project planning
 
-Fun:
-
--   [Rocket](https://matthewpalmer.net/rocket/): integrates emojis into your other applications 🚀 (after downloading, be sure to click the Rocket icon in your upper right menu bar, then in preferences allow it to open on login)
--   [Top Ten Programming Memes](https://dev.to/teamxenox/top-10-programming-memes-pemes-4php): self explanatory 😄
-
-VS Code:
+VS Code 💻:
 
 -   [More information on using Prettier](https://www.codereadability.com/automated-code-formatting-with-prettier/)
 -   [A developer's guide to VS Code settings you should customize](https://dev.to/thegeoffstevens/vs-code-settings-you-should-customize-5e75): we already did some of these today
 -   [VS Code Can Do That?!](https://vscodecandothat.com/)
+
+Fun 🎉:
+
+-   [Rocket](https://matthewpalmer.net/rocket/): integrates emojis into your other applications 🚀 (after downloading, be sure to click the Rocket icon in your upper right menu bar, then in preferences allow it to open on login)
+-   [Top Ten Programming Memes](https://dev.to/teamxenox/top-10-programming-memes-pemes-4php): self explanatory 😄
