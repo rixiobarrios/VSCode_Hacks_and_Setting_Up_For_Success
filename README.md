@@ -126,9 +126,11 @@ Monitors
 
 If you have not yet installed the extensions specified by the instructors during Installfest, let's do so now:
 
-### Installed During Installfest (skip this part if you added these already):
+### Installed During Installfest
 
-**Most important for today**:
+> If you have not completed the VS Code Extensions part of Installfest, please install the three extensions below for now and do the rest later. If you have already installed these all, check out my additional recommendations below.
+
+> **Most important for today**:
 
 -   [x] **Live Server** (most of you did this yesterday!): allows you to continually refresh your index.html file in your browser after saving changes in your code editor 🌊
 -   [x] **ES Lint**: "lints" or analyzes your code for errors ✅
@@ -142,12 +144,12 @@ If you have not yet installed the extensions specified by the instructors during
 -   [x] **Git Link**: allows you to quickly find GitHub links to your files
 -   [x] **Git Lens**: shows status and owner of changes to Git-tracked files
 -   [x] **Bracket Pair Colorizer**: uses different colors for your brackets and parentheses so you can keep track of them
--   [x] **Path Intellisense**: auto-completes file names AKA paths.
+-   [x] **Path Intellisense**: auto-completes file paths.
 
 ### My Additional Recommendations (optional):
 
 -   [ ] **Live Share**: Allows you to simultaneously work in VS code files with other developers in real-time (like Google docs), which will be very useful for pair-programming in future assignments 👩‍💻👩‍💻
--   [ ] **Code Spell Checker**: Automatically spell-checks your code (so that you don't ever have to spend hours debugging only to realize you misspelled your variable on line 56 🤦‍♀️).
+-   [ ] **Code Spell Checker**: Automatically spell-checks your code (so that you don't ever have to spend 2 hours debugging only to realize you misspelled your variable on line 56 🤦‍♀️).
 -   [ ] **Peacock**: Allows you to select different background colors for multiple code editors 🎨 (useful if you're working on two different projects, like a frontend and a backend, to quickly tell the two apart):
 
 ![Peacock Preview](images/hero.png)
@@ -166,9 +168,12 @@ Code formatting done well makes your code easy to read and understand, and also 
 1. Scroll down to `Editor: Word Wrap`. Select `on` from the dropdown.
    <br>
    ![VS Code - Settings](images/wrap.png)
-   Your long lines of code will now be wrapped at the width of your viewport:
 
-    ![Atom - Soft Wrap](https://i.imgur.com/pU911Al.png)
+<br>
+    Your long lines of code will now be wrapped at the width of your viewport:
+<br>
+
+![Atom - Soft Wrap](https://i.imgur.com/pU911Al.png)
 
 1. Scroll down to `Extensions` in your `Settings`. Select **Prettier** from the list on the left.
 1. Scroll down to `Prettier: Semi` and `Prettier: Single Quote`. Check the box for both to enable semicolons and single quotes.
