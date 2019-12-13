@@ -288,7 +288,7 @@ If you would learn any two - learn these!
 | Control-C | Stop the running process (works for many, but not all) |
 | Command-K |                    Clear the window                    |
 
-> Whenever you quit terminal, a REALLY good habit is to ALWAYS type `exit` as the command to shut down all terminal processes, then close the terminal window with (`cmd` + `q`). This will prevent extraneous processes from running in the background of your machine and taking up much needed memory!
+> Whenever you quit terminal, including VS Code's built-in terminal, a REALLY good habit is to ALWAYS type `exit` as the command to shut down all terminal processes, then close the terminal window with (`cmd` + `q`). This will prevent extraneous processes from running in the background of your machine and taking up much needed memory!
 
 :computer: Additional Command Line Shortcuts for Terminal can be found [here](https://www.makeuseof.com/tag/mac-terminal-commands-cheat-sheet/).
 
@@ -325,7 +325,7 @@ If you would learn any two - learn these!
 
 -   Download the repo for every lecture/lab/exercise, and place it in the appropriate directory within your `/sei` folder to stay organized.
 -   Only fork and clone homework assignments that you will need to turn in via pull request.
--   I strongly recommend using [Dark Mode](https://support.apple.com/en-us/HT208976) on your Mac, in [Visual Studio Code](https://code.visualstudio.com/docs/getstarted/themes), and wherever else possible to reduce eye strain and blue light exposure.
+-   I strongly recommend using [Dark Mode](https://support.apple.com/en-us/HT208976) on your Mac, a darker color palette in [Visual Studio Code](https://code.visualstudio.com/docs/getstarted/themes), and wherever else possible to reduce eye strain and blue light exposure over the next three months.
 
 <hr>
 
