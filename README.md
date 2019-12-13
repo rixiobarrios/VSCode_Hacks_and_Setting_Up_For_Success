@@ -118,8 +118,8 @@ Monitors
 ### Then how do I know it worked?
 
 1.  Open terminal again (if you had to close it).
-1.  Navigate back into one of your homework assignment directories.
-1.  Type `code .` to open the whole directory, or `code test.html` to open just the file (try using the tab autocomplete!) and hit **enter**.
+1.  Navigate back into your directory for this repo.
+1.  Type `code .` to open the whole directory, or `code index.html` to open just the file (try using the tab autocomplete!) and hit **enter**.
 1.  Wait a moment, and VS Code will open the directory or file you requested!
 
 ## Extensions
