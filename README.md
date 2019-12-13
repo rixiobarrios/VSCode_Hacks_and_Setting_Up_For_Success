@@ -182,11 +182,11 @@ Code formatting done well makes your code easy to read and understand, and also 
 
 ![prettier settings](images/prettier_settings.png)
 
-1. Now to make these formatting changes automatically everytime you save, press `command` + `shift` + `p` to open your Command Palette. Type `Open Settings`, then select `Preferences: Open Settings (JSON)`.
+5. Now to format automatically save, press `command` + `shift` + `p` to open your Command Palette. Type `Open Settings`, then select `Preferences: Open Settings (JSON)`.
 
 ![opening settings file](images/open_settings_json.png)
 
-1. Once you have opened your `settings.json` file, copy and paste the following into the top of your settings.
+6. Once you have opened your `settings.json` file, copy and paste the following into the top of your settings.
 
 ```javascript
 "editor.formatOnSave": true,
@@ -195,7 +195,7 @@ Code formatting done well makes your code easy to read and understand, and also 
 
 > Optional: you can also add `"files.autoSave": "afterDelay"` if you would like VS Code to automatically save files for you. This is not always ideal, but it may be useful for the purposes of this course.
 
-1. Now your `settings.json` should look like this:
+7. Now your `settings.json` should look like this:
 
 ![settings.json file](images/correct_settingsjson.png)
 
