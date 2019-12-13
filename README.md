@@ -17,8 +17,8 @@
 ## Agenda
 
 -   Preface: The importance of starting good habits today
--   Part 1: VS Code Extensions, Settings and Shortcuts
--   Part 2: Screen Real Estate and Window Management with Spectacle
+-   Part 1: Screen Real Estate and Window Management with Spectacle
+-   Part 2: VS Code Extensions, Settings and Shortcuts
 -   Part 3: Mac Shortcuts
 -   Part 4: Terminal Shortcuts
 -   Part 5: Typing
@@ -38,151 +38,14 @@ There are hundreds, if not thousands, of little things you can do to make you a 
 
 :closed_lock_with_key: We will be downloading applications to your computer. Make sure you have the password for your Mac in order to proceed.
 
-**Suggestion: Bookmark or download this repository for future reference** 🤓
-
 <hr>
 
-## Part 1 - VS Code Extensions, Shortcuts & Settings
-
-### Launching VS Code from Terminal
-
-> Most of you have this set up already.
-
--   Open VS Code by clicking on the icon in your dock, OR by opening your search `cmd` + `space` and typing `vscode`).
--   Most of you already did this, but if you can't launch VS Code from your terminal yet: open the Command Palette (⇧⌘P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command.
-
-![install shell commands](shellcommand.png)
-
--   You might need to quit terminal _and_ VS Code (`cmd` + `q`) in order for this to take effect.
-    -   Make sure you are `quitting` terminal and VS Code, not just closing the program to install shell commands.
-    -   Whenever you quit terminal, a REALLY good habit is to always type `exit` as the command to shut down all terminal processes, then close the terminal window with (`cmd` + `q`)
-
-### Then how do I know it worked?
-
-1.  Open terminal again (if you had to close it).
-1.  Navigate back into the `deleteme` directory.
-1.  Type `code .` to open the whole directory, or `code test.html` to open just the file (try using the tab autocomplete!) and hit **enter**.
-1.  Wait a moment, and VS Code will open the directory or file you requested!
-
-## Extensions (Mini Installfest)
-
-If you have not yet installed the extensions specified by Jennifer during Installfest, let's do so now:
-
-### Installed During Installfest (skip this part if you added these already):
-
--   [x] **Live Server** (you guys did this yesterday!): allows you to continually refresh your index.html file in your browser after making changes in your code editor 🌊
--   [x] **ES Lint**: "lints" or analyzes your code for potential errors ✅
--   [x] **Prettier Code Formatter**: an opinionated code formatter that can automatically adjust indentation and semicolons for you 🌸
--   [x] **Auto Rename Tag**: automatically renames tags
--   [x] **Auto Close Tag**: automatically closes tags
--   [x] **VS Code Icons**: custom file icons
--   [x] **Git Link**: allows you to quickly find GitHub links to your files
--   [x] **Git Lens**: shows status and owner of changes to Git-tracked files
--   [x] **Bracket Pair Colorizer**: uses different colors for your brackets and parentheses so you can keep track of them
--   [x] **Path Intellisense**: auto-completes file names AKA paths.
-
-### Esin's Additional Recommendations (totally optional):
-
--   [ ] **Live Share**: Allows you to simultaneously work in VS code files with other developers in real-time (like Google docs), which will be very useful for pair-programming in future assignments
--   [ ] **Code Spell Checker**: Automatically spell-checks your code (so that you don't ever have to spend hours debugging only to realize you misspelled your variable on line 56 🤦‍♀️).
--   [ ] **Peacock**: Allows you to select different background colors for multiple code editors (useful if you're working on two different projects, like a frontend and a backend, to quickly tell the two apart):
-
-![Peacock Preview](hero.png)
-
--   [ ] **Markdown Preview Enhanced**: Allows you to preview your .md files in VS Code (this will come in handy when you write out a detailed README for your projects so that potential employers and other developers understand what you did; on a related note, here is a great resource for [styling markdown files](https://guides.github.com/features/mastering-markdown/)):
-
-![MD_Preview](MD_Preview.png)
-
-## VS Code Settings & Hacks
-
-### Formatting
-
-1. **Open Settings**: In the VS Code navigation menu, go to `Code` -> `Preferences` -> `Settings`. You can also just press `command` + `,` (comma) to open your VS Code Settings.
-1. Scroll down to `Editor: Word Wrap`. Select `on` from the dropdown.
-   <br>
-   ![VS Code - Settings](wrap.png)
-   Your long lines of code will now be wrapped at the width of your viewport:
-
-    ![Atom - Soft Wrap](https://i.imgur.com/pU911Al.png)
-
-1. Scroll down to `Extensions` in your `Settings`. Select **Prettier** from the list on the left.
-1. Scroll down to `Prettier: Semi` and `Prettier: Single Quote`. Check the box for both to enable semicolons and single quotes.
-
-![prettier settings](prettier_settings.png)
-
-1. Now to make these formatting changes automatically everytime you hit `command` + `s` to save, we need to open your `settings.json` file. Press `command` + `shift` + `p` to open your Command Palette. Type `Open Settings`, then select `Preferences: Open Settings (JSON)`.
-
-![opening settings file](open_settings_json.png)
-
-1. Once you have opened your `settings.json` file, copy and paste the following into the top of your settings.
-
-```javascript
-"editor.formatOnSave": true,
- "editor.formatOnPaste": true,
-```
-
-1. Now your `settings.json` should look like this:
-
-![settings.json file](correct_settingsjson.png)
-
-Now your text editor will AUTOMATICALLY format on save and paste!
-
-## VS Code Shortcuts & Tricks
-
-### Selecting Code
-
--   To select the same word or values in multiple places in your document, use `command` + `d`
--   To move a line of code up or down, move your cursor to the line, press `option` and use the `up` or `down` arrows.
--   To quickly move through lines of code horizontally, use `option` + `left` or `right` arrows to move by word, and `command` + `left` or `right` arrows to move to the beginning or end of the line.
-
-### HTML Boilerplate
-
-Every HTML document needs the same basic tags. There's an easy way to do this in VS Code:
-
--   Go into the `index.html` file in this directory. Type `html:5` and hit `tab`. The boilerplate should autocomplete (this saves us a lot of time).
--   Even shorter: type `!` and then hit tab to create HTML boilerplate. 😱
--   File types matter. Notice how we're in a `.html` file!
-
-![html](https://i.imgur.com/OTprVyE.png)
-
-### Commenting Code
-
-Whether you're in an HTML, CSS, or JavaScript file, if you want to comment out your code (have the program ignore some lines of code), you can highlight your code and use one command: `command` + `/`.
-
-:eyes: Commented out code looks different depending on the file type, so you'll use this shortcut frequently!
-
-![comment code](https://i.imgur.com/GoxPKPj.png)
-
-### Split Screen
-
--   If you have more than one file that you'd like to look at in VS Code, you can go up to `View` --> `Editor Layout`and then choose how you would like your panes to be displayed. Two or even three panes can help your workflow! <br>
-
-Or you can click and drag the tab to where you'd like your new pane to be!
-
-![Atom - Split Pane](https://i.imgur.com/PESTf7r.png)
-
--   You can also click and drag the tab, a 'shadow' window will appear of where the tab will go and split, if it is right, just let go, if you want it somewhere else, keep dragging it around.
-
-![split screen](https://media.giphy.com/media/l0Iy2MnL9ejDrf73i/giphy.gif)
-
-### Indentation
-
-Code is indented to show parent/child relationships and emphasize hierarchy. It also makes it a lot easier for humans to read. Just like how authors indent new paragraphs, you should indent code frequently. Take the extra time (that you saved with all your shortcuts!) to indent your code properly _as you write it_.
-
-![indented code](https://i.imgur.com/RBTvNpo.png)
-
-:book: When you have time, check out the [AirBnB style guide](https://github.com/airbnb/javascript) for commonly-used industry practices.
-
-### Tabs Over Spaces
-
-When indenting your code, please use the tab button. [Do not use your spacebar](https://youtu.be/SsoOG6ZeyUI).
-
-## Part 2 - Spectacle
+## Part 1 - Spectacle
 
 -   Spectacle helps you to move and resize your screens with the a few clicks on your keypad. You no longer have to waste time using your mouse to rearrange the size of the screen.
--   Not only will this help to save you time, but it will help to add to the illusion that you are a bada\$\$ h4ck3r
+-   Not only will this help to save you time, but it will help to add to the illusion that you are a sup3r c00L h4ck3r. 🤓
 
-[Keanu whoa](https://media.giphy.com/media/3rVfBUa9f0RErtMZBH/giphy.gif)
+![Keanu whoa](https://media.giphy.com/media/3rVfBUa9f0RErtMZBH/giphy.gif)
 
 ### :computer: Click on this link https://www.spectacleapp.com/ and download and install Spectacle.
 
@@ -216,7 +79,7 @@ Once it's installed, you should have little glasses ![spectacle](https://i.imgur
 
 ![Spectacle Login](https://i.imgur.com/HrU8pNq.png)
 
--   You will likely use full screen, right half, left half and bottom half the most frequently.
+-   You will likely use full screen, right half, left half and bottom half the most frequently. There are also commands to move windows between screens!
 
 ![Spectacle Shortcuts](https://i.imgur.com/9CXJWSm.png)
 
@@ -226,6 +89,143 @@ Once it's installed, you should have little glasses ![spectacle](https://i.imgur
 
 Monitors
 ![Monitors Labeled.png](monitors_labeled.png)
+
+<hr>
+
+## Part 2 - VS Code Extensions, Shortcuts & Settings
+
+### Launching VS Code from Terminal
+
+> Most of you have this set up already.
+
+-   Open VS Code by clicking on the icon in your dock, OR by opening your search `cmd` + `space` and typing `vscode`).
+-   Most of you already did this, but if you can't launch VS Code from your terminal yet: open the Command Palette (⇧⌘P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command.
+
+![install shell commands](shellcommand.png)
+
+-   You might need to quit terminal _and_ VS Code (`cmd` + `q`) in order for this to take effect.
+    -   Make sure you are `quitting` terminal and VS Code, not just closing the program to install shell commands.
+
+### Then how do I know it worked?
+
+1.  Open terminal again (if you had to close it).
+1.  Navigate back into the `deleteme` directory.
+1.  Type `code .` to open the whole directory, or `code test.html` to open just the file (try using the tab autocomplete!) and hit **enter**.
+1.  Wait a moment, and VS Code will open the directory or file you requested!
+
+## Extensions
+
+If you have not yet installed the extensions specified by Jennifer during Installfest, let's do so now:
+
+### Installed During Installfest (skip this part if you added these already):
+
+**Most important for today**:
+
+-   [x] **Live Server** (you guys did this yesterday!): allows you to continually refresh your index.html file in your browser after making changes in your code editor 🌊
+-   [x] **ES Lint**: "lints" or analyzes your code for potential errors ✅
+-   [x] **Prettier Code Formatter**: an opinionated code formatter that can automatically adjust indentation and semicolons for you 🌸
+
+**These can be done this weekend**:
+
+-   [x] **Auto Rename Tag**: automatically renames tags
+-   [x] **Auto Close Tag**: automatically closes tags
+-   [x] **VS Code Icons**: custom file icons
+-   [x] **Git Link**: allows you to quickly find GitHub links to your files
+-   [x] **Git Lens**: shows status and owner of changes to Git-tracked files
+-   [x] **Bracket Pair Colorizer**: uses different colors for your brackets and parentheses so you can keep track of them
+-   [x] **Path Intellisense**: auto-completes file names AKA paths.
+
+### My Additional Recommendations (optional):
+
+-   [ ] **Live Share**: Allows you to simultaneously work in VS code files with other developers in real-time (like Google docs), which will be very useful for pair-programming in future assignments
+-   [ ] **Code Spell Checker**: Automatically spell-checks your code (so that you don't ever have to spend hours debugging only to realize you misspelled your variable on line 56 🤦‍♀️).
+-   [ ] **Peacock**: Allows you to select different background colors for multiple code editors (useful if you're working on two different projects, like a frontend and a backend, to quickly tell the two apart):
+
+![Peacock Preview](hero.png)
+
+-   [ ] **Markdown Preview Enhanced**: Allows you to preview your .md files in VS Code (this will come in handy when you write out a detailed README for your projects so that potential employers and other developers understand what you did; on a related note, here is a great resource for [styling markdown files](https://guides.github.com/features/mastering-markdown/)):
+
+![MD_Preview](MD_Preview.png)
+
+## VS Code Settings
+
+### Formatting
+
+Code formatting done well makes your code easy to read and understand, and also looks professional -- all things we want! Developing good habits early on to format as you write is important, but luckily VS Code has some great built-in tools to make formatting with your new extensions easier and more automatic.
+
+1. **Open Settings**: In the VS Code navigation menu, go to `Code` -> `Preferences` -> `Settings`. You can also just press `command` + `,` (comma) to open your VS Code Settings.
+1. Scroll down to `Editor: Word Wrap`. Select `on` from the dropdown.
+   <br>
+   ![VS Code - Settings](wrap.png)
+   Your long lines of code will now be wrapped at the width of your viewport:
+
+    ![Atom - Soft Wrap](https://i.imgur.com/pU911Al.png)
+
+1. Scroll down to `Extensions` in your `Settings`. Select **Prettier** from the list on the left.
+1. Scroll down to `Prettier: Semi` and `Prettier: Single Quote`. Check the box for both to enable semicolons and single quotes.
+
+![prettier settings](prettier_settings.png)
+
+1. Now to make these formatting changes automatically everytime you hit `command` + `s` to save, we need to open your `settings.json` file. Press `command` + `shift` + `p` to open your Command Palette. Type `Open Settings`, then select `Preferences: Open Settings (JSON)`.
+
+![opening settings file](open_settings_json.png)
+
+1. Once you have opened your `settings.json` file, copy and paste the following into the top of your settings.
+
+```javascript
+"editor.formatOnSave": true,
+ "editor.formatOnPaste": true,
+```
+
+> Optional: you can also add "files.autoSave": "afterDelay" if you would like VS Code to automatically save files for you. This is not always ideal, but it may be useful for the purposes of this course.
+
+1. Now your `settings.json` should look like this:
+
+![settings.json file](correct_settingsjson.png)
+
+Now your text editor will AUTOMATICALLY format on save and paste! That being said, do your best to format code correctly, as you will often be coding without your formatter (such as in REPLs like CodePen, or whiteboarding in coding interviews).
+
+## VS Code Shortcuts & Hacks
+
+### Selecting Code
+
+-   To select the same word or values in multiple places in your document, use `command` + `d`
+-   To move a line of code up or down, move your cursor to the line, press `option` and use the `up` or `down` arrows.
+-   To quickly move through lines of code horizontally, use `option` + `left` or `right` arrows to move by word, and `command` + `left` or `right` arrows to move to the beginning or end of the line.
+
+### HTML Boilerplate
+
+Every HTML document needs the same basic tags. There's an easy way to do this with the Emmet tool built into VS Code:
+
+-   Go into the `index.html` file in this directory. Type `html:5` and hit `tab`. The boilerplate should autocomplete (this saves us a lot of time).
+-   Even shorter: type `!` and then hit tab to create HTML boilerplate. 😱
+-   File types matter when using extensions. Notice that we're using these extensions in an `.html` file!
+
+![html](https://i.imgur.com/OTprVyE.png)
+
+### Commenting Code
+
+Whether you're in an HTML, CSS, or JavaScript file, if you want to comment out your code (have the program ignore some lines of code), you can highlight your code and use one command: `command` + `/`.
+
+:eyes: Commented out code looks different depending on the file type, so you'll use this shortcut frequently!
+
+![comment code](https://i.imgur.com/GoxPKPj.png)
+
+### Split Screen
+
+-   If you have more than one file that you'd like to look at in VS Code, you can go up to `View` --> `Editor Layout`and then choose how you would like your panes to be displayed. Two or even three panes can help your workflow! <br>
+
+Or you can click and drag the tab to where you'd like your new pane to be!
+
+![Atom - Split Pane](https://i.imgur.com/PESTf7r.png)
+
+-   You can also click and drag the tab, a 'shadow' window will appear of where the tab will go and split, if it is right, just let go, if you want it somewhere else, keep dragging it around.
+
+![split screen](https://media.giphy.com/media/l0Iy2MnL9ejDrf73i/giphy.gif)
+
+### VS Code Built-in Terminal
+
+Anytime you need to access the terminal from your project directory, go to the VS Code Menu -> `Terminal` -> `New Terminal`. You can also use the keyboard shortcut `control` + `~` (to get the tilde, press `shift` + backtick). This is a convenient place to use for Git, folder and file creation/movement/deletion, and much more!
 
 <hr>
 
@@ -250,8 +250,8 @@ Monitors
 
 #### :hourglass: Optional Self-Guided Activity (5 minutes)
 
--   Open your Desktop or Documents in VS Code
--   Make a file
+-   Open this repository in VS Code.
+-   Make a file called `script2.js` from the terminal built into VS Code.
 -   Copy ALL (command A) the text from this file (you can copy from the browser)
 -   Paste (command V) the text into your new file
 -   Save (command S) - there is a blue dot on the top tab of your file that should disappear once your file has successfully saved
@@ -288,9 +288,11 @@ If you would learn any two - learn these!
 | Control-C | Stop the running process (works for many, but not all) |
 | Command-K |                    Clear the window                    |
 
+> Whenever you quit terminal, a REALLY good habit is to **always** type `exit` as the command to shut down all terminal processes, then close the terminal window with (`cmd` + `q`). This will prevent extraneous processes from running in the background of your machine and taking up much needed memory!
+
 :computer: Additional Command Line Shortcuts for Terminal can be found on our [class wiki](../../../../../wiki/Terminal-Cheatsheet).
 
-#### :hourglass: Optional Activity (5 minutes)
+#### :hourglass: Optional CLI Activity (5 minutes)
 
 -   Open your terminal and let's try out a few terminal shortcut commands while completing the steps below.
 -   You can open terminal via the dock, or by using Spotlight Search (`cmd` + `space`) and typing `terminal`.
@@ -307,6 +309,7 @@ If you would learn any two - learn these!
     - `control-u` clear the line of text
     - `command k` clear the window
     - `ls` - make sure you're still in the right directory
+    - `code .` to open your file in VS Code and try out your new extensions and shortcuts!
 
 <hr>
 
@@ -328,7 +331,7 @@ If you would learn any two - learn these!
 
 ## Summary
 
--   We covered a lot of different short cuts and tools today. Come back to this markdown as a reference and look up the things we did and keep practicing!
+-   We covered a lot of different shortcuts and tools today. Come back to this markdown as a reference and look up the things we did and keep practicing!
 -   These shortcuts will help you spend less time and energy managing your screen and workflow, and more time and energy thinking about writing GOOD CODE.
 -   As you learn more about what it means to be a developer, find the tools and extensions that work for YOU and make you HAPPY when you code. 👩‍💻👨‍💻
 -   This course is intense, but it should never get in the way of self-care. A gentle reminder to make sure you are eating well, getting out of the house, stretching, sleeping enough, and finding ways to unwind that aren't in front of a screen. You will find that you work better and faster if you are taking the time to take care of yourself.
@@ -341,6 +344,6 @@ If you would learn any two - learn these!
 -   [Bullet Journaling](https://bulletjournal.com/pages/learn): a really cool productivity habit that I highly recommend
 -   [Coding Journals](https://www.makeuseof.com/tag/become-better-coder-keeping-programming-journal/): an awesome way to keep track of your growth as a coder and synthesize the different concepts you learn
 -   [Trello Boards](https://trello.com): a great free service for people who love interactive, visual to-do lists, and widely-used in development for project planning
--   [Rocket](https://matthewpalmer.net/rocket/): integrates emojis into your other applications 🚀
+-   [Rocket](https://matthewpalmer.net/rocket/): integrates emojis into your other applications 🚀 (after downloading, be sure to click the Rocket icon in your upper right menu bar, then in preferences allow it to open on login)
 -   [More information on using Prettier](https://www.codereadability.com/automated-code-formatting-with-prettier/)
 -   [A developer's guide to VS Code settings you should customize](https://dev.to/thegeoffstevens/vs-code-settings-you-should-customize-5e75): we already did some of these today
